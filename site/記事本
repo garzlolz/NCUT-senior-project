@@ -1,0 +1,7 @@
+var tt=[<?php while($row = mysql_fetch_array($result)){ echo date("'".$row['t_time'].""."',");}?>];     
+var tt=['','前天中午','','昨天中午','','今天中午']; 
+
+<p><?php  while($row = mysql_fetch_array($result)){echo $row['t_sensor']." ".",".$row['t_time']." ";}?></p>
+
+
+<?php echo $row['AVG(t_temp)']; ?>, <?php echo $row['AVG(t_humidity)']; ?>, <?php echo $row['AVG(t_sensor)']; ?>

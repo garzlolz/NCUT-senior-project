@@ -1,0 +1,37 @@
+.style1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.style6 {
+        font-size: 20px;
+}
+.style7 {
+        font-size: 14px;
+}
+.style9 {
+        font-size: 14; 
+        background-color: cadetblue;
+}
+.style10 {font-size: 14px; color: #000000; }
+.tr{
+        border-bottom:1px solid lightgray;
+      }
+.th{
+        border-bottom:2px solid black;
+        text-align: center;
+      }
+#page1{
+         background-color:rgb(13, 97, 100);
+      }
+#foot,#tb1{
+        background-color: cadetblue;
+}
+#tb3>td{
+        background-color: rgb(74, 170, 173);
+}
+#conttt>td{
+        background-color: rgb(176, 238, 240);
+}
+#rev{
+        background-color:rgb(127, 241, 203);
+}

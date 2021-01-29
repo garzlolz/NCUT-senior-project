@@ -1,0 +1,2 @@
+ while($arr = mysql_fetch_array($query_rs))
+  $data[]=$arr;
