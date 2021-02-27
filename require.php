@@ -16,7 +16,7 @@
 
   mysql_select_db($database_garz, $garz);
   if($_GET['so']==""){
-  $query_rs = "SELECT * FROM temperature ORDER BY t_id DESC";
+  $query_rs = "SELECT * FROM temperature ORDER BY t_time DESC";
   }else{
   $query_rs = "SELECT * FROM temperature where t_time like '%".$_GET['so']."%' ORDER BY t_id DESC";
   }

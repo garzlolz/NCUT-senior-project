@@ -71,7 +71,7 @@
 
 <main class="container">
   <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h1 class="display-4">溫度、濕度、空氣粉塵</h1>
+    <h1 class="display-4">溫度、濕度、空氣粉塵<img src="Spinner-1s-200px.gif" alt="error" width="35"></h1>
     
     <p class="lead" id="timeauto">error</p>
   </div>

@@ -79,6 +79,15 @@
           font-size: 3.5rem;
         }
       }
+      #btnprint{
+        border-radius:10px;
+        background-color:#3C3C3C;
+        color:white;
+      }
+
+      #btnprint:hover{
+        box-shadow:0px 0px 30px #7B7B7B	;
+      }
     </style>
 
     
@@ -131,7 +140,7 @@
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">折線圖</h1>
+        <h1 class="h2">折線圖 <input type="button" id= "btnprint" value="列印本頁" onclick=Print()></h1>
         <div class="btn-toolbar mb-2 mb-md-0">
         <form action="export/export_all.php">
           <button type="submit" class="btn btn-sm btn-outline-secondary">匯出全部</button>
@@ -139,7 +148,7 @@
         </div>
       </div>
 
-      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+      <canvas class="my-4 w-100" id="myChart" width="1000" height="400"></canvas>
 
       <h2>搜索日期</h2>
       <div class="table-responsive">
@@ -317,6 +326,11 @@
   })
 })()
       </script>
+      <script>
+  function Print() {
+    window.print();
+  }
+</script>
   </body>
 </html>
 <?php

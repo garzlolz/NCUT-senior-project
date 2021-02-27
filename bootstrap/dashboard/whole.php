@@ -45,6 +45,15 @@
           font-size: 3.5rem;
         }
       }
+      #btnprint{
+        border-radius:10px;
+        background-color:#3C3C3C;
+        color:white;
+      }
+
+      #btnprint:hover{
+        box-shadow:0px 0px 30px #7B7B7B	;
+      }
     </style>
 
     
@@ -98,7 +107,7 @@
       
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">一個月內</h1>
+        <h1 class="h2">一個月內 <input type="button" id= "btnprint" value="列印本頁" onclick=Print()></h1>
         <div class="btn-toolbar mb-2 mb-md-0">
         <select name="forma" onchange="location = this.value;">
              <option value="whole.php">一個月內</option>
@@ -112,7 +121,7 @@
         </div>
       </div>
       
-      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+      <canvas class="my-4 w-100" id="myChart" width="1000" height="400"></canvas>
 
       <h2>詳細</h2>
       <div class="table-responsive">
@@ -251,7 +260,11 @@
   })
 })()
 </script>
-
+<script>
+  function Print() {
+    window.print();
+  }
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   </body>
 </html>
